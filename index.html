@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .experience-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        .experience-item strong {
+            color: #333;
+            font-size: 1.1em;
+        }
+        
+        .experience-item p {
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-badge {
+            background: #f0f0f0;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .skill-badge:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.2);
+        }
+        
+        .expertise-list {
+            list-style: none;
+        }
+        
+        .expertise-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+        }
+        
+        .expertise-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        footer {
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+        
+        .highlight {
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .skills-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Professional Developer</h1>
+            <p>13 Years of Professional Excellence</p>
+        </header>
+        
+        <div class="content">
+            <section class="section">
+                <h2>About Me</h2>
+                <p>I am a <span class="highlight">highly experienced software developer</span> with over <span class="highlight">13 years</span> of professional experience in full-stack development. I specialize in building robust, scalable, and user-friendly applications using cutting-edge technologies.</p>
+                <p style="margin-top: 15px;">My passion for clean code, best practices, and continuous learning drives me to deliver exceptional solutions that exceed expectations. I thrive in collaborative environments and take pride in mentoring junior developers.</p>
+            </section>
+            
+            <section class="section">
+                <h2>Core Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-badge">JavaScript</div>
+                    <div class="skill-badge">Python</div>
+                    <div class="skill-badge">Next.js</div>
+                    <div class="skill-badge">React</div>
+                    <div class="skill-badge">Node.js</div>
+                    <div class="skill-badge">TypeScript</div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2>Expertise</h2>
+                <ul class="expertise-list">
+                    <li><strong>JavaScript:</strong> Advanced proficiency in ES6+, async programming, and modern frameworks</li>
+                    <li><strong>Python:</strong> Backend development, data processing, automation, and machine learning</li>
+                    <li><strong>Next.js:</strong> Full-stack development, SSR/SSG, API routes, and performance optimization</li>
+                    <li><strong>Frontend Development:</strong> Responsive design, accessibility, and user experience optimization</li>
+                    <li><strong>Backend Development:</strong> RESTful APIs, microservices, database design, and system architecture</li>
+                    <li><strong>DevOps & Deployment:</strong> Docker, CI/CD pipelines, cloud platforms, and infrastructure management</li>
+                </ul>
+            </section>
+            
+            <section class="section">
+                <h2>Professional Experience</h2>
+                <div class="experience-item">
+                    <strong>🚀 13+ Years in Software Development</strong>
+                    <p>Successfully delivered 100+ projects ranging from small startups to enterprise-level applications. Demonstrated expertise in requirement analysis, architecture design, implementation, and deployment.</p>
+                </div>
+                <div class="experience-item">
+                    <strong>💼 Full-Stack Development Specialist</strong>
+                    <p>Proficient in developing end-to-end solutions using JavaScript, Python, and Next.js. Proven track record of building scalable systems that handle millions of requests.</p>
+                </div>
+                <div class="experience-item">
+                    <strong>👥 Team Lead & Mentor</strong>
+                    <p>Experienced in leading development teams, code reviews, and mentoring junior developers to achieve technical excellence.</p>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2>Why Work With Me?</h2>
+                <ul class="expertise-list">
+                    <li>13+ years of proven professional development experience</li>
+                    <li>Expertise in modern technologies: JavaScript, Python, and Next.js</li>
+                    <li>Commitment to clean, maintainable, and scalable code</li>
+                    <li>Strong problem-solving and analytical skills</li>
+                    <li>Excellent communication and collaboration abilities</li>
+                    <li>Continuous learner and technology enthusiast</li>
+                </ul>
+            </section>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 Professional Developer. All rights reserved.</p>
+            <p>Building the future, one line of code at a time.</p>
+        </footer>
+    </div>
+</body>
+</html>
